@@ -9,9 +9,10 @@ export default defineConfig({
   ],
   optimizeDeps: {
     exclude: ['lucide-react'],
+  },
   build: {
     minify: 'terser',
-    cssMinify: True,
+    cssMinify: true,
     rollupOptions: {
       output: {
         manualChunks: {
@@ -19,5 +20,11 @@ export default defineConfig({
         },
       },
     },
+  },
+  server: {
+    port: 3000,
+  },
+  preview: {
+    port: 8080,
   },
 });
