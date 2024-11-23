@@ -5,19 +5,27 @@ import { format } from 'date-fns';
 
 const posts = [
   {
-    id: '1',
+    id: 'ml-healthcare-2024-04-15',
     title: 'Machine Learning in Healthcare',
-    excerpt: 'Exploring how machine learning is revolutionizing healthcare...',
-    date: '2024-03-15',
+    excerpt: 'Exploring how machine learning is revolutionizing healthcare through predictive analytics, personalized treatment plans, medical imaging, and more.',
+    date: '2024-04-15',
     category: 'Machine Learning',
     published: true
   },
   {
-    id: '2',
+    id: 'ds-best-practices-2024-04-10',
     title: 'Data Science Best Practices',
-    excerpt: 'Key principles and best practices for data science projects...',
-    date: '2024-03-10',
+    excerpt: 'Key principles and best practices for building robust and maintainable data science projects, covering data management, code organization, reproducibility, and more.',
+    date: '2024-04-10',
     category: 'Data Science',
+    published: true
+  },
+  {
+    id: 'power-bi-dashboard-2024-04-05',
+    title: 'Power BI Dashboard Design',
+    excerpt: 'Tips and techniques for creating effective and visually appealing Power BI dashboards, including layout planning, color schemes, data visualization selection, and interactivity.',
+    date: '2024-04-05',
+    category: 'Data Visualization',
     published: true
   }
 ];

@@ -39,33 +39,34 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0], index: n
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       viewport={{ once: true }}
-      className="bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-[1.02] transition-all duration-300"
+      className="group bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-[1.02] transition-all duration-300"
     >
       <div className="relative h-48 overflow-hidden">
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent" />
-        <project.icon className="absolute bottom-4 right-4 w-8 h-8 text-purple-400" />
+        <project.icon className="absolute bottom-4 right-4 w-8 h-8 text-purple-400 z-10" />
       </div>
-      
-      <div className="p-6">
-        <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
-        <p className="text-gray-400 mb-4">{project.description}</p>
-        
+
+      <div className="p-6 relative z-10">
+        <h3 className="text-xl font-semibold mb-2 text-white transition-colors duration-300 group-hover:text-purple-300">
+          {project.title}
+        </h3>
+        <p className="text-gray-400 mb-4 transition-colors duration-300 group-hover:text-gray-300">{project.description}</p>
+
         <div className="flex flex-wrap gap-2 mb-4">
           {project.tags.map((tag, i) => (
             <span
               key={i}
-              className="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm"
+              className="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm transition-colors duration-300 group-hover:bg-purple-800/60 group-hover:text-purple-200"
             >
               {tag}
             </span>
           ))}
         </div>
-        
+
         <div className="flex gap-4">
           <a
             href={project.github}
