@@ -39,6 +39,7 @@ const About = () => {
                 src="/Collins Profile Photo.jpg"
                 alt="Collins Nyagaka"
                 className="w-full h-full object-cover object-center"
+                loading="lazy"
               />
             </div>
           </motion.div>
