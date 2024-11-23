@@ -5,7 +5,7 @@
 - [Purpose](#purpose)
 - [Features](#features)
 - [Languages and Packages Used](#languages-and-packages-used)
-- [Services Used](#services-used)
+- [Hosting](#hosting)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -48,9 +48,25 @@ The project is built using several programming languages and packages:
 - **Vite:** A fast build tool that enhances the development experience with quick refresh capabilities.
 - **ESLint:** For maintaining code quality and enforcing coding standards.
 
-## Services Used
-- **Firebase:** Provides hosting services, enabling reliable deployment and scalability of the web application.
-- **GitHub Actions:** For continuous integration and deployment workflows.
+## Hosting 
+**Host on a Platform**:
+   You can deploy the portfolio using any of the following platforms:
+   
+   - **GitHub Pages**:
+   1. Push your code to a GitHub repository.
+   2. Go to the repository's **Settings** > **Pages**.
+   3. Under "Source," select the branch (e.g., `main`) and folder (e.g., `/root`) to deploy.
+   4. Save changes, and your portfolio will be live at `https://<your_username>.github.io/<repository_name>/`.
+
+   - **Netlify**:
+   1. Create an account at [Netlify](https://www.netlify.com/).
+   2. Drag and drop your project folder onto the Netlify dashboard or link the GitHub repository.
+   3. Netlify will automatically deploy and provide a live URL.
+
+   - **Vercel**:
+   1. Create an account on [Vercel](https://vercel.com/).
+   2. Import your GitHub repository into Vercel.
+   3. Follow the prompts to configure and deploy your project.
 
 ## Getting Started
 
